@@ -1,0 +1,43 @@
+Let's dive into the data
+------------------------------
+-7 data sets - each data set contains different columns and values
+- A data model - this shows the relationships between all of the data sets, as well as any links that you can use to merge tables.
+
+DataModelling & requirement gathering:
+---------------------------------------------
+
+Refer: [DATAMD.png]  for data modelling structure
+
+Identified Reaction, Content, and Reaction Types as our relevant data sets.Why?
+
+- The brief carefully it states that the client wanted to see “An analysis of their content categories showing the top 5 categories with the largest popularity”.
+- As explained in the data model, popularity is quantified by the “Score” given to each reaction type.
+- We therefore need data showing the content ID, category, content type, reaction type, and reaction score.
+- So, to figure out popularity, we’ll have to add up which content categories have the largest score.
+
+Data Clenaing:
+-----------------
+Removed duplicate in excel \
+Removed Null values\
+Standardize column name
+
+
+Task:
+---------
+Now we want to figure out the top 5 categories. 
+1. Create a final data set by merging  three tables together\
+    - Using the Reaction table as base table, then first join the relevant columns from  Content data set, and then the Reaction Types data set.\
+ **used a “VLookUp” formula**
+ 2. Figure out the Top 5 performing categories\
+    - For this Added up the total scores for each category.
+    **used the “Sum If” formula**\
+
+end result:
+- A cleaned dataset
+- The top 5 categories\
+
+3. Structure presentation explaining insight
+4. Presentated video of  presentation to  client and internal team members 
+
+
+
